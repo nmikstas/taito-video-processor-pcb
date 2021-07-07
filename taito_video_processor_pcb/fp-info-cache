@@ -1,4 +1,4 @@
-17066221813287243
+17075975479430712
 Asteroids
 2N6044
 
@@ -75747,6 +75747,13 @@ CapA
 2
 2
 taito_video_processor_pcb
+CapB
+
+
+0
+2
+2
+taito_video_processor_pcb
 Crystal
 
 
@@ -75768,12 +75775,33 @@ GenericComp
 2
 2
 taito_video_processor_pcb
+JMP
+
+
+0
+2
+2
+taito_video_processor_pcb
+LED
+
+
+0
+2
+2
+taito_video_processor_pcb
 RP
 
 
 0
 10
 10
+taito_video_processor_pcb
+Switch
+
+
+0
+5
+3
 taito_video_processor_pcb
 TPA
 
@@ -75796,6 +75824,13 @@ Trans
 3
 3
 taito_video_processor_pcb
+battery
+
+
+0
+2
+2
+taito_video_processor_pcb
 con_2pin
 
 
@@ -75809,6 +75844,13 @@ con_14pin
 0
 14
 14
+taito_video_processor_pcb
+hole
+
+
+0
+0
+0
 taito_video_processor_pcb
 hole_15
 
