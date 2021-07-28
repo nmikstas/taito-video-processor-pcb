@@ -469,7 +469,7 @@ Wire Wire Line
 Text GLabel 2725 1350 3    30   Input ~ 0
 ~RAS
 Text GLabel 2425 1350 3    30   Input ~ 0
-~CAS1
+~CAS
 Text GLabel 2525 1350 3    30   Input ~ 0
 M6
 Text GLabel 3225 1350 3    30   Input ~ 0
@@ -6363,10 +6363,8 @@ Text GLabel 21900 6500 2    30   Input ~ 0
 VEQ
 Wire Wire Line
 	21900 6500 20225 6500
-Text GLabel 21900 6600 2    30   Input ~ 0
+Text GLabel 21450 6600 2    30   Input ~ 0
 ~CAS
-Wire Wire Line
-	21900 6600 20950 6600
 Wire Wire Line
 	22050 6000 22025 6000
 Wire Wire Line
@@ -11102,7 +11100,7 @@ Wire Wire Line
 	20775 17800 20775 17225
 Connection ~ 20775 17225
 Wire Wire Line
-	20775 17225 24275 17225
+	20775 17225 23900 17225
 Wire Wire Line
 	20900 18000 20600 18000
 Wire Wire Line
@@ -11162,13 +11160,6 @@ Wire Wire Line
 Wire Wire Line
 	23550 17125 23550 17625
 Connection ~ 23550 17625
-Wire Wire Line
-	23550 17625 23900 17625
-Wire Wire Line
-	23900 17125 23900 17625
-Connection ~ 23900 17625
-Wire Wire Line
-	23900 17625 24275 17625
 $Comp
 L power:+5V #PWR0325
 U 1 1 98230197
@@ -13320,23 +13311,16 @@ _CS_
 $Comp
 L Device:R_US R9
 U 1 1 6BCCBBD6
-P 21225 6750
-F 0 "R9" V 21300 6750 50  0000 L CNN
-F 1 "?" V 21300 6625 50  0000 L CNN
-F 2 "taito_video_processor_pcb:GenericComp" V 21265 6740 50  0001 C CNN
-F 3 "~" H 21225 6750 50  0001 C CNN
-	1    21225 6750
+P 21225 6600
+F 0 "R9" V 21300 6600 50  0000 L CNN
+F 1 "?" V 21300 6475 50  0000 L CNN
+F 2 "taito_video_processor_pcb:GenericComp" V 21265 6590 50  0001 C CNN
+F 3 "~" H 21225 6600 50  0001 C CNN
+	1    21225 6600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	21075 6750 20950 6750
-Wire Wire Line
-	20950 6750 20950 6600
-Connection ~ 20950 6600
-Wire Wire Line
-	20950 6600 20225 6600
-Text GLabel 21375 6750 2    30   Input ~ 0
-~CAS1
+	21075 6600 20225 6600
 $Comp
 L Device:C C46
 U 1 1 6C167EC2
@@ -13724,12 +13708,12 @@ $EndComp
 $Comp
 L Device:C C41
 U 1 1 7354F15C
-P 30100 17950
-F 0 "C41" H 30215 17996 50  0000 L CNN
-F 1 ".1uf" H 30215 17905 50  0000 L CNN
-F 2 "taito_video_processor_pcb:GenericComp" H 30138 17800 50  0001 C CNN
-F 3 "~" H 30100 17950 50  0001 C CNN
-	1    30100 17950
+P 30100 19625
+F 0 "C41" H 30215 19671 50  0000 L CNN
+F 1 ".1uf" H 30215 19580 50  0000 L CNN
+F 2 "taito_video_processor_pcb:GenericComp" H 30138 19475 50  0001 C CNN
+F 3 "~" H 30100 19625 50  0001 C CNN
+	1    30100 19625
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -13781,19 +13765,34 @@ Connection ~ 27100 19475
 $Comp
 L Device:C C50
 U 1 1 7833D507
+P 30100 17950
+F 0 "C50" H 30215 17996 50  0000 L CNN
+F 1 ".1uf" H 30215 17905 50  0000 L CNN
+F 2 "taito_video_processor_pcb:GenericComp" H 30138 17800 50  0001 C CNN
+F 3 "~" H 30100 17950 50  0001 C CNN
+	1    30100 17950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C51
+U 1 1 7833F111
 P 30475 17950
-F 0 "C50" H 30590 17996 50  0000 L CNN
+F 0 "C51" H 30590 17996 50  0000 L CNN
 F 1 ".1uf" H 30590 17905 50  0000 L CNN
 F 2 "taito_video_processor_pcb:GenericComp" H 30513 17800 50  0001 C CNN
 F 3 "~" H 30475 17950 50  0001 C CNN
 	1    30475 17950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	30475 17750 30475 17800
+Wire Wire Line
+	30475 18150 30475 18100
 $Comp
-L Device:C C51
-U 1 1 7833F111
+L Device:C C52
+U 1 1 7973627F
 P 30850 17950
-F 0 "C51" H 30965 17996 50  0000 L CNN
+F 0 "C52" H 30965 17996 50  0000 L CNN
 F 1 ".1uf" H 30965 17905 50  0000 L CNN
 F 2 "taito_video_processor_pcb:GenericComp" H 30888 17800 50  0001 C CNN
 F 3 "~" H 30850 17950 50  0001 C CNN
@@ -13801,46 +13800,13 @@ F 3 "~" H 30850 17950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	30100 17750 30475 17750
-Wire Wire Line
-	30850 17750 30850 17800
-Connection ~ 30100 17750
-Wire Wire Line
-	30100 18150 30475 18150
-Wire Wire Line
-	30850 18150 30850 18100
-Connection ~ 30100 18150
-Wire Wire Line
-	30475 17800 30475 17750
-Connection ~ 30475 17750
-Wire Wire Line
 	30475 17750 30850 17750
 Wire Wire Line
-	30475 18100 30475 18150
-Connection ~ 30475 18150
+	30850 17750 30850 17800
+Wire Wire Line
+	30850 18150 30850 18100
 Wire Wire Line
 	30475 18150 30850 18150
-$Comp
-L Device:C C52
-U 1 1 7973627F
-P 31225 17950
-F 0 "C52" H 31340 17996 50  0000 L CNN
-F 1 ".1uf" H 31340 17905 50  0000 L CNN
-F 2 "taito_video_processor_pcb:GenericComp" H 31263 17800 50  0001 C CNN
-F 3 "~" H 31225 17950 50  0001 C CNN
-	1    31225 17950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	30850 17750 31225 17750
-Wire Wire Line
-	31225 17750 31225 17800
-Connection ~ 30850 17750
-Wire Wire Line
-	31225 18150 31225 18100
-Wire Wire Line
-	30850 18150 31225 18150
-Connection ~ 30850 18150
 $Comp
 L Device:C C55
 U 1 1 7B7550BD
@@ -14235,8 +14201,19 @@ Connection ~ 28975 17225
 $Comp
 L Device:C C67
 U 1 1 8C2D9D09
+P 31225 17950
+F 0 "C67" H 31340 17996 50  0000 L CNN
+F 1 ".1uf" H 31340 17905 50  0000 L CNN
+F 2 "taito_video_processor_pcb:GenericComp" H 31263 17800 50  0001 C CNN
+F 3 "~" H 31225 17950 50  0001 C CNN
+	1    31225 17950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C68
+U 1 1 8C2D9FBE
 P 31600 17950
-F 0 "C67" H 31715 17996 50  0000 L CNN
+F 0 "C68" H 31715 17996 50  0000 L CNN
 F 1 ".1uf" H 31715 17905 50  0000 L CNN
 F 2 "taito_video_processor_pcb:GenericComp" H 31638 17800 50  0001 C CNN
 F 3 "~" H 31600 17950 50  0001 C CNN
@@ -14244,25 +14221,14 @@ F 3 "~" H 31600 17950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C68
-U 1 1 8C2D9FBE
+L Device:C C69
+U 1 1 8C2DA35B
 P 31975 17950
-F 0 "C68" H 32090 17996 50  0000 L CNN
+F 0 "C69" H 32090 17996 50  0000 L CNN
 F 1 ".1uf" H 32090 17905 50  0000 L CNN
 F 2 "taito_video_processor_pcb:GenericComp" H 32013 17800 50  0001 C CNN
 F 3 "~" H 31975 17950 50  0001 C CNN
 	1    31975 17950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C69
-U 1 1 8C2DA35B
-P 32350 17950
-F 0 "C69" H 32465 17996 50  0000 L CNN
-F 1 ".1uf" H 32465 17905 50  0000 L CNN
-F 2 "taito_video_processor_pcb:GenericComp" H 32388 17800 50  0001 C CNN
-F 3 "~" H 32350 17950 50  0001 C CNN
-	1    32350 17950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -14324,35 +14290,35 @@ F 3 "~" H 26350 18825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	32350 17750 32350 17800
+	31975 17750 31975 17800
 Wire Wire Line
-	31225 18150 31600 18150
+	30850 18150 31225 18150
 Wire Wire Line
-	32350 18150 32350 18100
-Connection ~ 31225 18150
+	31975 18150 31975 18100
+Connection ~ 30850 18150
+Wire Wire Line
+	30850 17750 31225 17750
+Connection ~ 30850 17750
+Wire Wire Line
+	31225 17800 31225 17750
+Connection ~ 31225 17750
 Wire Wire Line
 	31225 17750 31600 17750
-Connection ~ 31225 17750
 Wire Wire Line
 	31600 17800 31600 17750
 Connection ~ 31600 17750
 Wire Wire Line
 	31600 17750 31975 17750
 Wire Wire Line
-	31975 17800 31975 17750
-Connection ~ 31975 17750
-Wire Wire Line
-	31975 17750 32350 17750
-Wire Wire Line
-	31975 18100 31975 18150
-Connection ~ 31975 18150
-Wire Wire Line
-	31975 18150 32350 18150
-Wire Wire Line
 	31600 18100 31600 18150
 Connection ~ 31600 18150
 Wire Wire Line
 	31600 18150 31975 18150
+Wire Wire Line
+	31225 18100 31225 18150
+Connection ~ 31225 18150
+Wire Wire Line
+	31225 18150 31600 18150
 $Comp
 L Device:C C72
 U 1 1 8ED052E5
@@ -15047,4 +15013,27 @@ Wire Wire Line
 	29725 17225 29350 17225
 Connection ~ 29725 17225
 Connection ~ 29350 17225
+Wire Wire Line
+	21375 6600 21450 6600
+Wire Wire Line
+	23550 17625 24275 17625
+Wire Wire Line
+	23900 17125 23900 17225
+Connection ~ 23900 17225
+Wire Wire Line
+	23900 17225 24275 17225
+Wire Wire Line
+	30100 19475 29725 19475
+Connection ~ 29725 19475
+Wire Wire Line
+	29725 19775 30100 19775
+Connection ~ 29725 19775
+Wire Wire Line
+	30475 17750 30100 17750
+Connection ~ 30475 17750
+Connection ~ 30100 17750
+Wire Wire Line
+	30475 18150 30100 18150
+Connection ~ 30475 18150
+Connection ~ 30100 18150
 $EndSCHEMATC
