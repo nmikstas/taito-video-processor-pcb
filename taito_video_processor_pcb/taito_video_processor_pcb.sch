@@ -2834,7 +2834,7 @@ Wire Wire Line
 Text GLabel 31375 12625 0    30   Input ~ 0
 Q
 Text GLabel 31375 13325 0    30   Input ~ 0
-~QX
+~E
 Wire Wire Line
 	31375 13625 31175 13625
 $Comp
