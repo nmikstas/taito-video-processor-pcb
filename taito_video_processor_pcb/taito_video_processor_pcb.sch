@@ -15045,4 +15045,25 @@ Wire Wire Line
 Connection ~ 13150 2400
 Wire Wire Line
 	13150 2400 12825 2400
+$Comp
+L Device:C C999
+U 1 1 620CC81A
+P 32000 17025
+F 0 "C999" H 32115 17071 50  0000 L CNN
+F 1 ".1uf" H 32115 16980 50  0000 L CNN
+F 2 "taito_video_processor_pcb:GenericComp" H 32038 16875 50  0001 C CNN
+F 3 "~" H 32000 17025 50  0001 C CNN
+	1    32000 17025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	32000 16875 32000 16825
+Wire Wire Line
+	32000 16825 31625 16825
+Connection ~ 31625 16825
+Wire Wire Line
+	31625 17225 32000 17225
+Wire Wire Line
+	32000 17225 32000 17175
+Connection ~ 31625 17225
 $EndSCHEMATC
