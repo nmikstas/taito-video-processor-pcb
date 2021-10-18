@@ -31,68 +31,64 @@ LED1, LED2, LED3, LED4, LED5, LED6                           6       BLUE LED   
 Q1, Q2, Q3, Q4, Q5, Q6, Q7                                   7       2N3904           Digikey 2N3904FS-ND
 Q8                                                           1       2N3906           Digikey 2N3906FS-ND
 
-R1, R10, R21, R36, R51, R52, R53, R54, R55, R56, R57, R58    12      33               Digikey 33QBK-ND
-R2                                                           1       1.5k
-R3, R4, R5, R15, R18, R49                                    6       270
-R6, R38, R60, R62, R66, R67, R68, R69                        8       3.3k
-R7                                                           1       220
-R8                                                           1       2.2k
-R9, R11, R12, R22, R23, R24, R25, R26, R27                   9       ?
-R13, R20, R46                                                3       82
-R14, R19, R28, R48                                           4       180
-R16, R17, R45, R65                                           4       150
+R1,  R9,  R10, R11, R12, R21, R22, R23, R24, R25,            21      33               Digikey 33QBK-ND
+R26, R27, R36, R51, R52, R53, R54, R55, R56, R57, 
+R58
+   
+R2                                                           1       1.5k             Digikey 1.50KXBK-ND
+R3, R4, R5, R15, R18, R49                                    6       270              Digikey MFR-25FBF52-270R-ND
+R6, R38, R60, R62, R66, R67, R68, R69                        8       3.3k             Digikey 13-MFR-25FRF52-3K3CT-ND
+R7                                                           1       220              Digikey MFR-25FBF52-220R-ND
+R8                                                           1       2.2k             Digikey 13-MFR-25FTE52-2K2CT-ND
+R13, R20, R46                                                3       82               Digikey MFR-25FBF52-82R-ND
+R14, R19, R28, R48                                           4       180              Digikey 180QBK-ND
+R16, R17, R45, R65                                           4       150              Digikey 150XBK-ND
 R29, R30, R31, R32, R33, R47                                 6       470              Digikey 470QBK-ND
-R34                                                          1       680
-R35, R61                                                     2       390
-R37, R50, R59                                                3       47k
+R34                                                          1       680              Digikey 13-MFR-25FTE52-680RCT-ND
+R35, R61                                                     2       390              Digikey MFR-25FBF52-390R-ND
+R37, R50, R59                                                3       47k              Digikey 13-MFR-25FTE52-47KCT-ND
 R39, R40, R41, R42, R43, R44, R63                            7       1k               Digikey 1.0KQBK-ND
-R64                                                          1       120
+R64                                                          1       120              Digikey 13-MFR-25FRF52-120RCT-ND
 
-RP1                                                          1       1K
-RP2                                                          1       47K
-RP3, RP4, RP5                                                3       3.3k
+RP1                                                          1       1K               Digikey 4310R-1-102LF-ND
+RP2                                                          1       47K              Digikey 4310R-1-473LF-ND
+RP3, RP4, RP5                                                3       3.3k             Digikey 4310R-1-332LF-ND
 
-SW1                                                          1       SW_Push
-
-"4","U1, U2, U69, U75","245_1"
-"2","U3, U4","2114"
-"8","U5, U6, U21, U55, U73, U74, U81, U104","157_1"
-"3","U7, U36, U89","LS74"
-"6","U8, U9, U22, U49, U67, U88","LS32"
+SW1                                                          1       SW_Push          Digikey CKN4013-ND
 
 U10, U11, U12, U13, U14, U15, U16, U17, U26, U27,            32      4116             Jameco 41339
 U28, U29, U30, U31, U32, U33, U41, U42, U43, U44,
 U45, U46, U47, U48, U59, U60, U61, U62, U63, U64,
 U65, U66
 
-"1","U18","68A45"
-"1","U19","86_2"
-"1","U20","86_1"
-"1","U23","161_1"
-"3","U24, U39, U90","LS04"
-"7","U25, U70, U71, U91, U92, U93, U94","374_1"
-"2","U34, U72","LS374"
-"4","U35, U52, U53, U54","153_1"
-"2","U37, U101","LS08"
-"1","U38","74S113"
-"2","U40, U58","7417"
-"1","U50","86_3"
-"1","U51","LS86"
-"1","U56","2148_1"
-"1","U57","2148_2"
-"3","U68, U83, U84","244_2"
-"1","U76","273_1"
-"4","U77, U78, U79, U80","373"
-"1","U82","68A09E"
-"2","U85, U86","6514_1"
-"1","U87","LS139"
-"8","U95, U96, U105, U106, U107, U108, U109, U110","299_1"
-"2","U97, U98","244_1"
-"1","U99","138_1"
-"2","U100, U103","LS00"
-"1","U102","LS10"
+U1, U2, U69, U75                                             4       LS245            Jameco 47212
+U3, U4                                                       2       2114             Jameco 38973
+U5, U6, U21, U55, U73, U74, U81, U104                        8       LS157            Jameco 46771
+U7, U36, U89                                                 3       LS74             Jameco 48004
+U8, U9, U22, U49, U67, U88                                   6       LS32             Jameco 47466
+U18                                                          1       68A45            Ebay
+U19, U20, U50, U51                                           4       LS86             Jameco 48098
+U23                                                          1       LS161            Jameco 46818
+U24, U39, U90                                                3       LS04             Jameco 46316
+U34, U70, U71, U72, U91, U92, U93, U94                       8       LS374            Jameco 47634
+U25                                                          1       S374             Jameco 48776
+U35, U52, U53, U54                                           4       LS153            Jameco 46720
+U37, U101                                                    2       LS08             Jameco 46375
+U38                                                          1       S113             Jameco 2298911
+U40, U58                                                     2       17               Jameco 49728
+U56, U57                                                     2       2148             Ebay
+U68, U83, U84, U97, U98                                      5       LS244            Jameco 47183
+U76                                                          1       LS273            Jameco 47386
+U77, U78, U79, U80                                           4       LS373            Jameco 47600
+U82                                                          1       68A09E           Jameco 320590
+U85, U86                                                     2       6514             Jameco 43238
+U87                                                          1       LS139            Jameco 46623
+U95, U96, U105, U106, U107, U108, U109, U110                 8       LS299            Jameco 47440
+U99                                                          1       LS138            Jameco 46607
+U100, U103                                                   2       LS00             Jameco 46252
+U102                                                         1       LS10             Jameco 46404
 
-"1","Y1","Crystal"
+Y1                                                           1       20.0 MHz         Digikey 535-9010-ND
 
 IC Sockets
 ---------------------
