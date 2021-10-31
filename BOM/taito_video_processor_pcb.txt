@@ -5,6 +5,8 @@ C24, C25, C46, C47, C48, C49, C110, C111, C112, C109         11      Not Populat
 FB11, FB12, FB13                                             3       Not Populated    N/A
 JB2                                                          1       Not Populated    N/A
 
+BT2                                                          1       CR2032 holder    Digikey 2057-BH-80A-1-ND
+
 C1,   C2,   C3,   C4,   C5,   C6,   C7,   C8,   C10,  C11,   84      .1uf             Digikey 399-4454-1-ND
 C12,  C13,  C15,  C16,  C17,  C18,  C19,  C20,  C21,  C23,
 C26,  C27,  C28,  C29,  C30,  C32,  C33,  C34,  C35,  C36,
@@ -19,6 +21,8 @@ C9, C22, C42, C44, C45, C61, C63, C77, C80, C101             10      10uf       
 C14, C31                                                     2       100pf            Digikey 399-9839-ND
 C65, C96, C97, C98, C113                                     5       470pf            Digikey 1113PHCT-ND
 C88, C89, C90                                                3       100uf            Digikey 1572-1309-ND
+
+D1                                                           1       FR156            Digikey 1655-1516-1-ND
 
 FB1,  FB2,  FB3, FB4, FB5, FB6, FB7, FB8, FB9, FB10, FB14    11      Ferrite bead     Digikey 1934-1552-ND
 
