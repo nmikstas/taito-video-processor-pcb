@@ -3,7 +3,6 @@ Part_ID                                                      QTY     DESC       
 BT1                                                          1       Not Populated    N/A
 C24, C25, C46, C47, C48, C49, C110, C111, C112, C109         11      Not Populated    N/A
 FB11, FB12, FB13                                             3       Not Populated    N/A
-JB2                                                          1       Not Populated    N/A
 
 BT2                                                          1       CR2032 holder    Digikey 2057-BH-80A-1-ND
 
@@ -29,6 +28,8 @@ FB1,  FB2,  FB3, FB4, FB5, FB6, FB7, FB8, FB9, FB10, FB14    11      Ferrite bea
 J1, J2                                                       2       7p 0.156" (X2)   Digikey A19892-ND
 J3, J6                                                       2       50pin .1"        Digikey 609-6244-ND
 J19                                                          1       2p 0.156"        Digikey WM4333-ND
+
+JB2                                                          1       2 POS Header     Digikey S2212E-01-ND
 
 LED1, LED2, LED3, LED4, LED5, LED6                           6       BLUE LED         Digikey VAOL-5701SBY4-ND
 
@@ -93,6 +94,10 @@ U100, U103                                                   2       LS00       
 U102                                                         1       LS10             Jameco 46404
 
 Y1                                                           1       20.0 MHz         Digikey 535-9010-ND
+
+Header Jumper
+---------------------
+Jumper           1
 
 IC Sockets
 ---------------------
