@@ -60,6 +60,7 @@ RP2                                                          1       47K        
 RP3, RP4, RP5                                                3       3.3k             Digikey 4310R-1-332LF-ND
 
 SW1                                                          1       SW_Push          Digikey CKN4013-ND
+SW2                                                          1       SW_Push          Digikey HP0215AFKP2-ND
 
 U10, U11, U12, U13, U14, U15, U16, U17, U26, U27,            32      4116             Jameco 41339
 U28, U29, U30, U31, U32, U33, U41, U42, U43, U44,
