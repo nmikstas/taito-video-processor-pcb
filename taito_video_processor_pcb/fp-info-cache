@@ -1,4 +1,4 @@
-17079243933440890
+17080880280388463
 Asteroids
 2N6044
 
@@ -75751,8 +75751,8 @@ CR2032
 
 
 0
-0
-0
+2
+2
 taito_video_processor_pcb
 CapA
 
@@ -75802,6 +75802,13 @@ LED
 0
 2
 2
+taito_video_processor_pcb
+Pushbutton
+
+
+0
+4
+4
 taito_video_processor_pcb
 RP
 

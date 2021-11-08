@@ -5225,8 +5225,6 @@ F 3 "~" H 3100 10650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 10450 2775 10450
-Wire Wire Line
 	2775 10450 2775 10200
 Connection ~ 2775 10200
 Wire Wire Line
@@ -5242,8 +5240,6 @@ F 3 "" H 3300 10550 50  0001 C CNN
 	1    3300 10550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3300 10450 3300 10550
 Wire Notes Line
 	775  6100 775  10825
 Wire Notes Line
@@ -15108,4 +15104,37 @@ Wire Wire Line
 Connection ~ 14000 1100
 Wire Wire Line
 	14000 1100 13950 1100
+$Comp
+L taito_pcb:Switch SW2
+U 1 1 621F6DC1
+P 2550 10650
+F 0 "SW2" H 2450 10650 50  0000 C CNN
+F 1 "Switch" H 2550 10800 50  0000 C CNN
+F 2 "taito_video_processor_pcb:Pushbutton" H 2550 10650 50  0001 C CNN
+F 3 "" H 2550 10650 50  0001 C CNN
+	1    2550 10650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2300 10550
+NoConn ~ 2300 10750
+Wire Wire Line
+	3300 10450 3300 10500
+Wire Wire Line
+	2775 10450 2850 10450
+Wire Wire Line
+	2800 10550 3250 10550
+Wire Wire Line
+	3250 10550 3250 10500
+Wire Wire Line
+	3250 10500 3300 10500
+Connection ~ 3300 10500
+Wire Wire Line
+	3300 10500 3300 10550
+Wire Wire Line
+	2850 10450 2850 10750
+Wire Wire Line
+	2850 10750 2800 10750
+Connection ~ 2850 10450
+Wire Wire Line
+	2850 10450 2900 10450
 $EndSCHEMATC
